@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Introduction - Login</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      width: 300px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+  <script>
+    function goToInfo(event) {
+      event.preventDefault();
+      window.location.href = "info.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h2>Login</h2>
+    <form onsubmit="goToInfo(event)">
+      <input type="text" placeholder="Enter your name" required><br>
+      <input type="password" placeholder="Create a password" required><br>
+      <input type="submit" value="Next">
+    </form>
+  </div>
+</body>
+</html>
