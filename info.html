@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Introduction - Info</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    input[type="submit"] {
+      width: 90%;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function goToProfile(event) {
+      event.preventDefault();
+      window.location.href = "profile.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h2>Information</h2>
+    <form onsubmit="goToProfile(event)">
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Email:</strong> mrhussainashrafi@gmail.com</p>
+      <input type="submit" value="View Profile">
+    </form>
+  </div>
+</body>
+</html>
